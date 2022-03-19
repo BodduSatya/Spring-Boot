@@ -1,0 +1,21 @@
+<h1 class="text-center">{{title}}</h1>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="employees" routerLinkAcive="active" class="nav-link"> Employee List</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="createEmployee" routerLinkAcive="active" class="nav-link"> Add Employee</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span>&copy; All Rights Reserved 2021</span>
+    </div>
+</footer>
