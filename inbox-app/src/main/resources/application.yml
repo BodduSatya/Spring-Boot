@@ -1,0 +1,22 @@
+# security:
+#  oauth2:
+#    client:
+#      clientId: Iv1.059467279d73f796
+#      clientSecret: 94eb67d7d9db10d57fe42e251469ed5a8753b120
+#      accessTokenUri: https://github.com/login/oauth/access_token
+#      userAuthorizationUri: https://github.com/login/oauth/authorize
+#      clientAuthenticationScheme: form
+#      tokenName: oauth_token
+#      authenticationScheme: query
+#    resource:
+#      userInfoUri: https://api.github.com/user
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.059467279d73f796
+            client-secret: 94eb67d7d9db10d57fe42e251469ed5a8753b120
