@@ -1,4 +1,6 @@
+###### Add New Product
 POST http://localhost:8080/api/product/add
+
 {
     "name": "Docker",
     "quantity": 2,
