@@ -3,6 +3,7 @@ package com.javaminds.springbootiq.service;
 import com.javaminds.springbootiq.modal.Course;
 import com.javaminds.springbootiq.modal.Student;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
+@Service
 public class StudentService {
 
     private static ArrayList<Student> students = new ArrayList<>();

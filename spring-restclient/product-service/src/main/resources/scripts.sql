@@ -1,0 +1,8 @@
+CREATE SEQUENCE product_seq;
+CREATE TABLE PRODUCT
+(
+    ID       INT PRIMARY KEY,
+    NAME     VARCHAR(255),
+    QUANTITY INT,
+    PRICE    decimal
+);
