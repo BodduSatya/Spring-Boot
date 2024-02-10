@@ -1,0 +1,9 @@
+INSERT INTO DEPARTMENT VALUES ('101', 'IT', 'IT Department', '1');
+INSERT INTO DEPARTMENT VALUES ('102', 'HR', 'HR Department', '1');
+INSERT INTO DEPARTMENT VALUES ('103', 'Finance', 'Finance Department', '1');
+INSERT INTO DEPARTMENT VALUES ('104', 'Sales', 'Sales Department', '1');
+INSERT INTO DEPARTMENT VALUES ('105', 'Development', 'Development Department', '1');
+INSERT INTO DEPARTMENT VALUES ('106', 'Network', 'Network Department', '1');
+INSERT INTO DEPARTMENT VALUES ('107', 'Security', 'Security Department', '1');
+INSERT INTO DEPARTMENT VALUES ('108', 'Admin', 'Admin Department', '1');
+INSERT INTO DEPARTMENT VALUES ('109', 'Product', 'Product Department', '1');
