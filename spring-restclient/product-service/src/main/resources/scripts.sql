@@ -1,4 +1,4 @@
-CREATE SEQUENCE product_seq;
+--CREATE SEQUENCE product_seq;
 CREATE TABLE PRODUCT
 (
     ID       INT PRIMARY KEY,
