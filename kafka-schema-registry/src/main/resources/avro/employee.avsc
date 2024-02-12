@@ -1,0 +1,37 @@
+{
+    "namespace":"com.satya.dto",
+    "type": "record",
+    "name": "Employee",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "firstname",
+            "type": "string"
+        },
+        {
+            "name": "middlename",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "lastname",
+            "type": "string"
+        },
+        {
+            "name": "emailId",
+            "type": "string",
+            "default": ""
+        }
+//        {
+//            "name": "dob",
+//            "type": "string"
+//        },
+//        {
+//            "name": "age",
+//            "type": "int"
+//        }
+    ]
+}
