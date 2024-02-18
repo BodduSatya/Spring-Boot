@@ -1,0 +1,2 @@
+insert into UserInfo(id,name,email,password,role) values ( 1, 'SATYA','boddusatya@gmail.com','Satya123','ROLE_ADMIN');
+insert into UserInfo(id,name,email,password,role) values ( 2, 'NARAYANA','bvvsnc3@gmail.com','Narayana123','ROLE_USER');
