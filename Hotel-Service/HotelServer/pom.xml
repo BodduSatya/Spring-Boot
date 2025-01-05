@@ -12,7 +12,7 @@
 	<artifactId>HotelServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>HotelServer</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Hotel Management System Project</description>
 	<url/>
 	<licenses>
 		<license/>

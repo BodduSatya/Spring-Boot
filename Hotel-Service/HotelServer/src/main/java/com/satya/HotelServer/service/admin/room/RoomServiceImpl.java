@@ -14,9 +14,9 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Service
+@Service("adminRoomServiceImpl")
 @RequiredArgsConstructor
-public class AdminRoomServiceImpl implements AdminRoomService {
+public class RoomServiceImpl implements RoomService {
 
     private  final RoomRepository roomRepository;
 

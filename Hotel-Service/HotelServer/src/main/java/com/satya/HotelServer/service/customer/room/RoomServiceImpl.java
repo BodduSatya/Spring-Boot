@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.stream.Collectors;
 
-@Service
+@Service("customerRoomServiceImpl")
 @RequiredArgsConstructor
-public class CustomerRoomServiceImpl implements CustomerRoomService {
+public class RoomServiceImpl implements RoomService {
 
     private final RoomRepository roomRepository;
 

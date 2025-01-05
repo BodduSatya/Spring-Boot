@@ -1,7 +1,7 @@
 package com.satya.HotelServer.controller.admin;
 
 import com.satya.HotelServer.dto.RoomDto;
-import com.satya.HotelServer.service.admin.room.AdminRoomService;
+import com.satya.HotelServer.service.admin.room.RoomService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -11,25 +11,25 @@ import org.springframework.web.bind.annotation.*;
 @RestController("adminController")
 @RequestMapping("/api/admin")
 @RequiredArgsConstructor
-public class AdminRoomController {
+public class RoomController {
 
-    private final AdminRoomService adminRoomService;
+    private final RoomService roomService;
 
     @PostMapping("/room")
     public ResponseEntity<?> postRoom(@RequestBody RoomDto roomDto) {
-        boolean success = adminRoomService.postRoom(roomDto);
+        boolean success = roomService.postRoom(roomDto);
         return success ? ResponseEntity.ok().build() : ResponseEntity.badRequest().build();
     }
 
     @GetMapping("/rooms/{pageNumber}")
     public ResponseEntity<?> getAllRooms(@PathVariable int pageNumber) {
-        return ResponseEntity.ok(adminRoomService.getAllRooms(pageNumber));
+        return ResponseEntity.ok(roomService.getAllRooms(pageNumber));
     }
 
     @GetMapping("/room/{id}")
     public ResponseEntity<?> getRoomById(@PathVariable Long id) {
         try{
-            return ResponseEntity.ok(adminRoomService.getRoomById(id));
+            return ResponseEntity.ok(roomService.getRoomById(id));
         }catch (EntityNotFoundException e){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }catch (Exception e){
@@ -39,7 +39,7 @@ public class AdminRoomController {
 
     @PutMapping("/room/{id}")
     public ResponseEntity<?> updateRoom(@PathVariable Long id, @RequestBody RoomDto roomDto) {
-         boolean success = adminRoomService.updateRoom(id,roomDto);
+         boolean success = roomService.updateRoom(id,roomDto);
 
          return success ?
                  ResponseEntity.status(HttpStatus.OK).build() :
@@ -49,7 +49,7 @@ public class AdminRoomController {
     @DeleteMapping("/room/{id}")
     public ResponseEntity<?> deleteRoomById(@PathVariable Long id) {
         try{
-            adminRoomService.deleteRoom(id);
+            roomService.deleteRoom(id);
             return ResponseEntity.ok().build();
         }catch (EntityNotFoundException e){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());

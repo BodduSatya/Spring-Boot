@@ -3,7 +3,7 @@ package com.satya.HotelServer.service.admin.room;
 import com.satya.HotelServer.dto.RoomDto;
 import com.satya.HotelServer.dto.RoomsResponseDto;
 
-public interface AdminRoomService {
+public interface RoomService {
 
     boolean postRoom(RoomDto roomDto);
 
