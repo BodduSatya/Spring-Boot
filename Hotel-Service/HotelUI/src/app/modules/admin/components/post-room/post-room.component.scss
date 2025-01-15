@@ -1,0 +1,62 @@
+.room-details-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f4f7fa;
+}
+
+.room-details-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nz-form-item {
+    margin-bottom: 16px;
+}
+
+.nz-form-control {
+    width: 100%;
+}
+
+.nz-input {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.nz-input::placeholder {
+    font-size: 14px;
+    color: #aaa;
+}
+
+button[nz-button] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+}
+
+button[nz-button]:hover {
+    background-color: #40a9ff;
+}
+
+button[nz-button]:active {
+    background-color: #096dd9;
+}

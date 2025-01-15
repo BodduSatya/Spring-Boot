@@ -1,0 +1,61 @@
+/* Add perspective to the container */
+.center-form {
+    perspective: 1500px;
+    /* Distance from the viewer to the scene */
+}
+
+/* Create 3D effect on the table */
+.nz-table {
+    width: 100%;
+    transform-style: preserve-3d;
+    /* Enable 3D transformations for child elements */
+    transition: transform 0.3s ease-in-out;
+    /* Add smooth transition */
+}
+
+/* Add a 3D shadow effect to each row */
+.nz-table tbody tr {
+    transform: rotateX(0deg);
+    /* Default 3D rotation */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Apply 3D effect on hover for each row */
+.nz-table tbody tr:hover {
+    transform: rotateX(10deg);
+    /* Rotate the row slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+/* Styling for table cells */
+.nz-table th,
+.nz-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Add a 3D effect for the pagination buttons */
+.nz-pagination .ant-pagination-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nz-pagination .ant-pagination-item:hover {
+    transform: translateY(-5px);
+    /* Move the pagination item up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+/* Optional: Add some padding and margin to make the effect more noticeable */
+.page-title {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}

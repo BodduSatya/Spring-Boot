@@ -24,7 +24,6 @@ import { NzDividerModule } from "ng-zorro-antd/divider";
 import { NzDrawerModule } from "ng-zorro-antd/drawer";
 import { NzDropDownModule } from "ng-zorro-antd/dropdown";
 import { NzEmptyModule } from "ng-zorro-antd/empty";
-import { NzFormModule } from "ng-zorro-antd/form";
 import { NzGridModule } from "ng-zorro-antd/grid";
 import { NzI18nModule } from "ng-zorro-antd/i18n";
 import { NzIconModule } from "ng-zorro-antd/icon";
@@ -69,9 +68,13 @@ import { NzTypographyModule } from "ng-zorro-antd/typography"; // Import NzTypog
 import { NzUploadModule } from "ng-zorro-antd/upload"; // Import NzUploadModule
 import { NzWaveModule } from "ng-zorro-antd/core/wave";
 // import { NzWaveModule } from "ng-zorro-antd/wave"; // Import NzWaveModule
+import { NzInputGroupComponent } from 'ng-zorro-antd/input';
+import { NzFormItemComponent, NzFormModule,NzFormControlComponent } from "ng-zorro-antd/form";
 
 @NgModule({
   imports: [
+    NzInputGroupComponent,
+    NzFormControlComponent,
     CommonModule, 
     FormsModule, 
     ReactiveFormsModule, 
@@ -139,9 +142,12 @@ import { NzWaveModule } from "ng-zorro-antd/core/wave";
     NzTreeSelectModule,
     NzTypographyModule,
     NzUploadModule,
-    NzWaveModule
+    NzWaveModule,
+    NzFormItemComponent
   ],
   exports: [
+    NzInputGroupComponent,
+    NzFormControlComponent,
     NzAffixModule,
     NzAlertModule,
     NzAnchorModule,
@@ -206,7 +212,8 @@ import { NzWaveModule } from "ng-zorro-antd/core/wave";
     NzTreeSelectModule,
     NzTypographyModule,
     NzUploadModule,
-    NzWaveModule
+    NzWaveModule,
+    NzFormItemComponent
   ]
 })
 export class DemoNgZorroAntdModule {}

@@ -1,0 +1,64 @@
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.post-room-btn {
+    margin-bottom: 20px;
+    font-size: 16px;
+    // padding: 10px 20px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Ensure it fits the text content */
+}
+
+.post-room-btn:hover {
+    background-color: #40a9ff;
+}
+
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.room-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nz-card {
+    margin: 16px;
+}
+
+.nz-card-meta {
+    text-align: center;
+}
+
+.nz-avatar {
+    margin-right: 16px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #1890ff;
+}
+
+.icon:hover {
+    color: #40a9ff;
+}
+
